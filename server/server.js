@@ -19,6 +19,7 @@ class Server{
     middlewares(){
         //leer json
         this.app.use(express.json())
+        this.app.use(cors())
         //archivos staticos
         // this.app(express.static("public"))
     }
